@@ -6,14 +6,13 @@ import CircleBoardGroup from "./CircleBoardGroup";
 export default function App() {    
 
     var biRef = {};
-    var percent;
-    
-    function Alow(){
-        percent = [ Number(document.getElementById("hydro").value),
+
+    var percent = [ Number(document.getElementById("hydro").value),
                     Number(document.getElementById("wind").value),
                     Number(document.getElementById("solar").value), 
                     Number(document.getElementById("nonr").value)
-        ];
+    ];
+    function Alow(){
         biRef.set_State(percent);
     }
 
